@@ -253,7 +253,7 @@ export default function Categories() {
                                 {
                                     // property input 
                                     properties.length > 0 && properties.map((property, index) => (
-                                        <div className="flex gap-x-3">
+                                        <div key={index} className="flex gap-x-3">
                                             <input
                                                 type="text"
                                                 onChange={ev => handlePropertyNameChange(index, property, ev.target.value)}

@@ -200,7 +200,7 @@ export default function ProductForm({
                     <SelectItem>Uncategorized</SelectItem>
                     {
                         categories.length > 0 && categories.map(c => (
-                            <SelectItem value={c._id}>{c.name}</SelectItem>
+                            <SelectItem key={c._id} value={c._id}>{c.name}</SelectItem>
                         ))
                     }
                 </SelectContent>
